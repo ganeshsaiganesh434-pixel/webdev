@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>\
+    <style>
+        /* the specifity  of this is  element 1*/
+        h1 {
+            color: aqua;
+
+        }
+
+        /* the specifity  of this is  element 10*/
+
+        .cpurple {
+            color: purple;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        h1.yellow {
+            color: yellow;
+
+        }
+
+        /* the specifity  of this is  class selector 10*/
+        /*this is an example of attribute selecotr
+the specificity of this selector is 10*/
+        [data-x=a] {
+            color: maroon;
+            background-color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="cred cpurple yellow" data-x="a">
+        specificity calcultor
+    </h1>
+
+</body>
+
+</html>
